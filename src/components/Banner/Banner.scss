@@ -7,6 +7,8 @@
     height: 400px;
     width: 100vw;
     margin-bottom: 150px;
+    position: relative; // Обеспечиваем корректное позиционирование баннера
+        z-index: 1; // Баннер будет ниже по слою, чтобы не перекрывать другие элементы
 
     .banner__image {
         flex: 1;
