@@ -1,0 +1,97 @@
+.footer {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__section {
+        flex: 1;
+
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        &--left {
+            flex: 1.5;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            address {
+                font-size: 14px;
+                color: #666;
+                line-height: 1.6;
+            }
+        }
+
+        &--newsletter {
+            h3 {
+                margin-bottom: 15px;
+            }
+
+            .footer__newsletter {
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: 200px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+
+                .footer__subscribe-btn {
+                    padding: 10px 20px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                font-size: 14px;
+                margin-bottom: 10px;
+                color: #333;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid #ddd;
+        font-size: 14px;
+        color: #666;
+    }
+}
